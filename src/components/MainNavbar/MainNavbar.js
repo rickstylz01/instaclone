@@ -8,8 +8,7 @@ import FormControl from "react-bootstrap/FormControl";
 class Header extends React.Component {
   render() {
     return (
-      <Navbar 
-        id="mainNavbar" 
+      <Navbar  
         collapseOnSelect expand="lg" 
         bg="dark" 
         variant="dark"
@@ -17,16 +16,17 @@ class Header extends React.Component {
         <Navbar.Brand href="#home">Rickstagram</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-        <Form inline id="searchBar">
-          <FormControl 
-            type="text" 
-            placeholder="Search" 
-            className="mr-sm-2" 
-          />
-          <Button variant="outline-primary">Search</Button>
-        </Form>
-        
         <Navbar.Collapse id="responsive-navbar-nav">
+          <Form id="searchBar" inline>
+            <FormControl 
+              type="text" 
+              placeholder="Search" 
+              className="mr-sm-2" 
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        
+        
           <Nav className="mr-auto" id="homeIcon">
             <Nav.Link href="#home">
               <svg
