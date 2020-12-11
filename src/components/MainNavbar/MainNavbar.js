@@ -11,7 +11,7 @@ class Header extends React.Component {
     return (
       <div id="MainNavbar">
         <Navbar bg="light" variant="light">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Rickstagram</Navbar.Brand>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="outline-primary">Search</Button>
