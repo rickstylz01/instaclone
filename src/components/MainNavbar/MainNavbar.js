@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
 
-class Header extends React.Component {
+class MainNavbar extends React.Component {
   render() {
     return (
       <Navbar  
@@ -17,7 +17,7 @@ class Header extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Form id="searchBar" inline>
+          <Form className="ml-auto" inline>
             <FormControl 
               type="text" 
               placeholder="Search" 
@@ -26,8 +26,7 @@ class Header extends React.Component {
             <Button variant="outline-success">Search</Button>
           </Form>
         
-        
-          <Nav className="mr-auto" id="homeIcon">
+          <Nav className="ml-auto">
             <Nav.Link href="#home">
               <svg
                 width="2em"
@@ -54,4 +53,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default MainNavbar;

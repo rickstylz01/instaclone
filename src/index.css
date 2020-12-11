@@ -12,14 +12,4 @@ code {
     monospace;
 }
 
-#homeIcon {
-  position: absolute;
-  right: 0px;
-}
-
-#searchBar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
