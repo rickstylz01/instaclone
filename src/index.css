@@ -12,16 +12,17 @@ code {
     monospace;
 }
 
-/* .btn-outline-primary {
-  margin-right: 10rem;
-} */
+/* Desktop */
+@media (min-width: 600px) {
+  body {
+    background: green;
+  }
 
-#navTitle {
-  position: absolute;
-  left: 0px;
+
 }
 
-#searchBar {
-  margin: auto;
-}
+/* Mobile */
+
+
+
 
