@@ -7,17 +7,24 @@ import FormControl from "react-bootstrap/FormControl";
 
 class Header extends React.Component {
   render() {
-    //inputgroup = navbar
     return (
-      <div id="MainNavbar">
-        <Navbar bg="light" variant="light">
-          <Navbar.Brand href="#home">Rickstagram</Navbar.Brand>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-primary">Search</Button>
-          </Form>
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">
+      <Navbar id="mainNavbar" bg="light" variant="light">
+
+        <Navbar.Brand href="#home">Rickstagram</Navbar.Brand>
+
+        <Form inline id="searchBar">
+          <FormControl 
+            type="text" 
+            placeholder="Search" 
+            className="mr-sm-2" />
+          <Button 
+            variant="outline-primary">
+              Search
+          </Button>
+        </Form>
+
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">
             <svg
               width="2em"
               height="2em"
@@ -34,10 +41,11 @@ class Header extends React.Component {
                 fillRule="evenodd"
                 d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
               />
-            </svg></Nav.Link>
-          </Nav>
-        </Navbar>
-      </div>
+            </svg>
+          </Nav.Link>
+        </Nav>
+
+      </Navbar>
     );
   }
 }

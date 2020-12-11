@@ -12,17 +12,14 @@ code {
     monospace;
 }
 
-/* Desktop */
-@media (min-width: 600px) {
-  body {
-    background: green;
-  }
-
-
+.mr-auto {
+  position: absolute;
+  right: 0px;
 }
 
-/* Mobile */
-
-
-
+#searchBar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
