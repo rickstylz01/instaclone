@@ -1,11 +1,19 @@
 import React from 'react';
-import MainNavbar from './components/MainNavbar/MainNavbar'
+import { CardDeck, Container } from 'react-bootstrap';
+import MainNavbar from './components/MainNavbar/MainNavbar';
+import PostCard from './components/PostCard/PostCard';
 
 function App() {
   return (
     <div>
       <MainNavbar />
-      <p>Hello, world!</p>
+      <Container>
+        <CardDeck className="mt-3">
+          <PostCard />
+          <PostCard />
+          <PostCard />
+        </CardDeck>
+      </Container> 
     </div>
   );
 }
