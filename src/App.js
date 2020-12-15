@@ -1,11 +1,12 @@
 import React from 'react';
 import MainNavbar from './components/MainNavbar/MainNavbar'
+import PostCard from './components/PostCard/PostCard'
 
 function App() {
   return (
     <div>
       <MainNavbar />
-      <p>Hello, world!</p>
+      <PostCard />
     </div>
   );
 }
