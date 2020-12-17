@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "username": "gcwokeup",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Alona_Beach%2C_Bohol.jpg/288px-Alona_Beach%2C_Bohol.jpg",
+    "caption": "wow bohol",
+    "created_at": "2020-12-11T02:37:36.711Z",
+    "updated_at": "2020-12-11T02:37:36.711Z"
+  },
+  {
+    "id": 2,
+    "username": "rick",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/I-296.svg/1024px-I-296.svg.png",
+    "caption": "interstate sign",
+    "created_at": "2020-12-11T19:28:04.458Z",
+    "updated_at": "2020-12-11T19:28:04.458Z"
+  },
+  {
+    "id": 3,
+    "username": "mike",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/S.R._Kirby_fitting_out_%281%29.jpg/1280px-S.R._Kirby_fitting_out_%281%29.jpg",
+    "caption": "just bought a boat",
+    "created_at": "2020-12-17T02:37:36.711Z",
+    "updated_at": "2020-12-17T02:37:36.711Z"
+  },
+  {
+    "id": 4,
+    "username": "al",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rockefeller_Center%2C_December_1933.jpg/800px-Rockefeller_Center%2C_December_1933.jpg",
+    "caption": "rockafellar building",
+    "created_at": "2020-12-19T19:28:04.458Z",
+    "updated_at": "2020-12-19T19:28:04.458Z"
+  },
+  {
+    "id": 5,
+    "username": "vitals",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/CoyolxauhquiDisk_cropped.JPG",
+    "caption": "antique",
+    "created_at": "2020-12-11T02:37:36.711Z",
+    "updated_at": "2020-12-11T02:37:36.711Z"
+  },
+  {
+    "id": 6,
+    "username": "bonnie",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Juxtlahuaca_Ruler_%28M_Lachniet%29.jpg",
+    "caption": "old art",
+    "created_at": "2020-12-11T19:28:04.458Z",
+    "updated_at": "2020-12-11T19:28:04.458Z"
+  },
+  {
+    "id": 7,
+    "username": "goku",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/800px-Albert_Einstein_Head.jpg",
+    "caption": "Einstein",
+    "created_at": "2020-12-17T02:37:36.711Z",
+    "updated_at": "2020-12-17T02:37:36.711Z"
+  },
+  {
+    "id": 8,
+    "username": "al",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rockefeller_Center%2C_December_1933.jpg/800px-Rockefeller_Center%2C_December_1933.jpg",
+    "caption": "rockafellar building",
+    "created_at": "2020-12-19T19:28:04.458Z",
+    "updated_at": "2020-12-19T19:28:04.458Z"
+  },
+  {
+    "id": 9,
+    "username": "vegeta",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
+    "caption": "some old guy",
+    "created_at": "2020-12-17T02:37:36.711Z",
+    "updated_at": "2020-12-17T02:37:36.711Z"
+  },
+  {
+    "id": 10,
+    "username": "naruto",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Carl_Friedrich_Gauss.jpg/800px-Carl_Friedrich_Gauss.jpg",
+    "caption": "another old guy",
+    "created_at": "2020-12-19T19:28:04.458Z",
+    "updated_at": "2020-12-19T19:28:04.458Z"
+  }
+]
