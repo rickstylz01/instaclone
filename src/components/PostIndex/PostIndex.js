@@ -12,10 +12,6 @@ class PostIndex extends React.Component {
   }
 
   getData() {
-    // axios.get('http://jsonplaceholder.typicode.com/users').then(res => {
-    //   var data = res.data
-    //     this.setState({data : data})
-    // })
     this.setState({ data: postsData });
   }
   componentDidMount() {
@@ -31,7 +27,7 @@ class PostIndex extends React.Component {
             userName={post.username}
             caption={post.caption}
             timeStamp={post.created_at}
-
+            key={post.id}
           />
           ))}
       </Row>
