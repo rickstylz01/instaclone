@@ -4,18 +4,16 @@ import Card from 'react-bootstrap/Card';
 class PostCard extends React.Component {
   render() {
     return (
-      <Card>
-        <Card.Img variant="top" src="https://pbs.twimg.com/profile_images/1192101281252495363/c_xL2w3j_400x400.jpg" />
+      <Card className="col-10 offset-2 m-3">
+        <Card.Img variant="top" src={this.props.imageUrl} />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>{this.props.userName}</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit
-            longer.
+            {this.props.caption}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Last updated {this.props.timeStamp}</small>
         </Card.Footer>
       </Card>
     );
