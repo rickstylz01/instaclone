@@ -19,8 +19,8 @@ class PostCard extends React.Component {
         <Card.Footer>
           <small className="text-muted">Last updated {this.props.timeStamp}</small>
           <ModalBox 
-            imageUrl={this.props.image_url}
-            userName={this.props.username}
+            imageUrl={this.props.imageUrl}
+            userName={this.props.userName}
             caption={this.props.caption}
           />
         </Card.Footer>

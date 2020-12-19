@@ -7,7 +7,8 @@ const ModalBox = props => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  console.log(props);
+  console.log('hello');
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -21,7 +22,8 @@ const ModalBox = props => {
         <Modal.Body>
           <Card.Img 
           variant="top" 
-          src={props.imageUrl} />
+          src={props.imageUrl}
+         />
           <Card.Body>
             <Card.Title>{props.userName}</Card.Title>
             <Card.Text>
