@@ -17,7 +17,7 @@ const ModalBox = props => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>title</Modal.Title>
+          <Modal.Title>Rickstagram</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Card.Img 
