@@ -7,8 +7,6 @@ const ModalBox = props => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  console.log(props);
-  console.log('hello');
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
@@ -44,5 +42,3 @@ const ModalBox = props => {
 }
 
 export default ModalBox
-
-// render(<Example />);
