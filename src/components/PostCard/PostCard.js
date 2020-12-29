@@ -1,6 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import ModalBox from '../ModalBox/ModalBox';
+import TimeAgo from 'react-timeago';
 
 class PostCard extends React.Component {
 
@@ -17,7 +18,8 @@ class PostCard extends React.Component {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated {this.props.timeStamp}</small>
+          <small><TimeAgo date={this.props.timeStamp} /></small>
+          <br />
           <ModalBox 
             imageUrl={this.props.imageUrl}
             userName={this.props.userName}
