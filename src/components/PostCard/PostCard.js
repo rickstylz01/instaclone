@@ -20,31 +20,38 @@ class PostCard extends React.Component {
   render() {
     return (
       <Card className="col-10 offset-2 m-3">
-        <Card.Img onClick={this.openModal()} variant="top" src={this.props.imageUrl} />
+        <Card.Img onClick={this.openModal} variant="top" src={this.props.imageUrl} />
+        
         <Card.Body>
           <Card.Title>{this.props.userName}</Card.Title>
           <Card.Text>{this.props.caption}</Card.Text>
         </Card.Body>
+
         <Card.Footer>
           <small>
             <TimeAgo date={this.props.timeStamp} />
           </small>
           <br />
+
           <Modal show={this.state.show} onHide={() => this.setState({ setShow: false })}>
             <Modal.Header closeButton />
+    
             <Modal.Body>
               <Card.Img variant="top" src={this.props.imageUrl} />
+              
               <Card.Body>
                 <Card.Title>{this.props.userName}</Card.Title>
                 <Card.Text>{this.props.caption}</Card.Text>
               </Card.Body>
             </Modal.Body>
-            <Modal.Footer>
+
+            {/* <Modal.Footer>
               <Button variant="secondary" onClick={() => this.setState({ setShow: false })}>
                 Close
               </Button>
-            </Modal.Footer>
+            </Modal.Footer> */}
           </Modal>
+          
         </Card.Footer>
       </Card>
     );
