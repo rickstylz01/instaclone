@@ -47,6 +47,12 @@ class PostCard extends React.Component {
                 <Card.Text>{this.props.caption}</Card.Text>
               </Card.Body>
             </Modal.Body>
+
+              <Modal.Footer>
+                <small>
+                  <TimeAgo date={this.props.timeStamp} />
+                </small>
+              </Modal.Footer> 
           </Modal>
           
         </Card.Footer>
