@@ -47,12 +47,6 @@ class PostCard extends React.Component {
                 <Card.Text>{this.props.caption}</Card.Text>
               </Card.Body>
             </Modal.Body>
-
-            {/* <Modal.Footer>
-              <Button variant="secondary" onClick={() => this.setState({ setShow: false })}>
-                Close
-              </Button>
-            </Modal.Footer> */}
           </Modal>
           
         </Card.Footer>
