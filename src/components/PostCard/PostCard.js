@@ -2,7 +2,6 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import TimeAgo from "react-timeago";
-import Button from "react-bootstrap/Button";
 
 class PostCard extends React.Component {
   constructor(props) {
@@ -16,6 +15,10 @@ class PostCard extends React.Component {
   openModal = () => {
     this.setState({ show: true });
   } 
+
+  closeModal = () => {
+    this.setState({ show: false });
+  }
 
   render() {
     return (
@@ -33,7 +36,7 @@ class PostCard extends React.Component {
           </small>
           <br />
 
-          <Modal show={this.state.show} onHide={() => this.setState({ setShow: false })}>
+          <Modal show={this.state.show} onHide={this.closeModal}>
             <Modal.Header closeButton />
     
             <Modal.Body>
