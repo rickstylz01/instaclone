@@ -1,9 +1,7 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
+import SearchBar from '../SearchBar/SearchBar';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import FormControl from "react-bootstrap/FormControl";
 
 class MainNavbar extends React.Component {
   render() {
@@ -17,14 +15,8 @@ class MainNavbar extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Form className="ml-auto" inline>
-            <FormControl 
-              type="text" 
-              placeholder="Search" 
-              className="mr-sm-2" 
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+        
+          <SearchBar />
         
           <Nav className="ml-auto">
             <Nav.Link href="#home">
