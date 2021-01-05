@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
+import NamesContainer from "./NamesContainer";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -28,21 +29,28 @@ class SearchBar extends React.Component {
   }
 
   dynamicSearch = () => {
-    return this.state.names.filter(name => name.toLocaleLowerCase().includes(this.state.searchTerm.toLocaleLowerCase()))
+    return this.state.names.filter(
+      name => name.toLocaleLowerCase().includes(
+        this.state.searchTerm.toLocaleLowerCase()))
   }
 
   render() {
     return (
-      <Form className="ml-auto" inline>
-        <FormControl 
-        type="text" 
-        placeholder="Search" 
-        className="mr-sm-2"
-        value={this.state.searchTerm}
-        onChange={this.editSearchTerm} />
+      <div>
 
-        <Button variant="outline-success">Search</Button>
-      </Form>
+      
+        <Form className="ml-auto" inline>
+          <FormControl 
+          type="text" 
+          placeholder="Search" 
+          className="mr-sm-2"
+          value={this.state.searchTerm}
+          onChange={this.editSearchTerm} />
+
+          <Button variant="outline-success">Search</Button>
+        </Form>
+        <NamesContainer names={ this.dynamicSearch() } />
+      </div>
     );
   }
 }
