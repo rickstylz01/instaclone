@@ -1,5 +1,4 @@
 import React from "react";
-import SearchBar from '../SearchBar/SearchBar';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -9,14 +8,12 @@ class MainNavbar extends React.Component {
       <Navbar  
         collapseOnSelect expand="lg" 
         bg="dark" 
-        variant="dark"
-      >
+        variant="dark">
+
         <Navbar.Brand href="#home">Rickstagram</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
-        
-          <SearchBar />
         
           <Nav className="ml-auto">
             <Nav.Link href="#home">

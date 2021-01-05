@@ -2,43 +2,39 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
-import NamesContainer from "./NamesContainer";
+import postsData from '../PostIndex/postsData.json';
+import PostIndex from '../PostIndex/PostIndex';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      names: [
-        'Rick',
-        'Vitals',
-        'Gino',
-        'Mike',
-        'Al',
-        'Randy',
-        'Rich',
-        'Matt',
-        'Franky',
-        'Ramon',
-      ],
-      searchTerm: ''
+      data: [],
+      searchTerm: '',
     };
   }
 
-  editSearchTerm = (e) => {
-    this.setState({ searchTerm: e.target.value })
+  getData() {
+    this.setState({ data: postsData });
+  }
+  componentDidMount() {
+    this.getData();
+  }
+
+  editSearchTerm = (query) => {
+    this.setState({ searchTerm: query.target.value })
   }
 
   dynamicSearch = () => {
-    return this.state.names.filter(
-      name => name.toLocaleLowerCase().includes(
+    debugger
+    return this.state.data.filter(
+      postObject => postObject.username.toLocaleLowerCase().includes(
         this.state.searchTerm.toLocaleLowerCase()))
   }
 
   render() {
     return (
       <div>
-
-      
         <Form className="ml-auto" inline>
           <FormControl 
           type="text" 
@@ -47,9 +43,12 @@ class SearchBar extends React.Component {
           value={this.state.searchTerm}
           onChange={this.editSearchTerm} />
 
-          <Button variant="outline-success">Search</Button>
+          <Button 
+          variant="outline-success">
+            Search
+          </Button>
         </Form>
-        <NamesContainer names={ this.dynamicSearch() } />
+        <PostIndex data={ this.dynamicSearch() } />
       </div>
     );
   }
