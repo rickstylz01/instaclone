@@ -2,23 +2,14 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
-import postsData from '../PostIndex/postsData.json';
-import PostIndex from '../PostIndex/PostIndex';
+
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
       searchTerm: '',
     };
-  }
-
-  getData() {
-    this.setState({ data: postsData });
-  }
-  componentDidMount() {
-    this.getData();
   }
 
   editSearchTerm = (query) => {
@@ -26,8 +17,7 @@ class SearchBar extends React.Component {
   }
 
   dynamicSearch = () => {
-    debugger
-    return this.state.data.filter(
+    return this.props.data.filter(
       postObject => postObject.username.toLocaleLowerCase().includes(
         this.state.searchTerm.toLocaleLowerCase()))
   }
@@ -48,7 +38,7 @@ class SearchBar extends React.Component {
             Search
           </Button>
         </Form>
-        <PostIndex data={ this.dynamicSearch() } />
+        
       </div>
     );
   }

@@ -3,10 +3,6 @@ import PostCard from '../PostCard/PostCard';
 import Row from 'react-bootstrap/Row';
 
 class PostIndex extends React.Component {
-  constructor(props) {
-    super(props);
-    
-  }
 
   render() {
     return (

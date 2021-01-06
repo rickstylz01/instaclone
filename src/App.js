@@ -1,18 +1,18 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import MainNavbar from './components/MainNavbar/MainNavbar';
-
-// import PostIndex from './components/PostIndex/PostIndex';
-
-import SearchBar from './components/SearchBar/SearchBar';
+import PostIndex from './components/PostIndex/PostIndex';
+import postsData from './components/PostIndex/postsData.json';
 
 function App() {
+  const data = postsData;
+
   return (
     <div>
-      <MainNavbar />
+      <MainNavbar data={data} />
       <Container>
-        <SearchBar />
-        {/* <PostIndex /> */}
+        
+      <PostIndex data={data}/>
       </Container> 
     </div>
   );
