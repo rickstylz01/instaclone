@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
 
 
-function SearchBar(props) {
+function SearchBar() {
   // constructor(props) {
   //   super(props);
   //   this.state = {
@@ -21,25 +21,23 @@ function SearchBar(props) {
   //     postObject => postObject.username.toLocaleLowerCase().includes(
   //       this.state.searchTerm.toLocaleLowerCase()))
   // }
-  const { searchTerm, setSearchTerm } = props
+  const  [searchTerm, setSearchTerm]  = useState("")
 
   return (
-    <div>
-      <Form className="ml-auto" inline>
-        <FormControl 
-        type="text" 
-        placeholder="Search" 
-        className="mr-sm-2"
-        value={searchTerm}
-        onChange={(query) => setSearchTerm(query.target.value)} />
+    <Form className="ml-auto" inline>
+      <FormControl 
+      type="text" 
+      placeholder="Search" 
+      className="mr-sm-2"
+      value={ searchTerm }
+      onChange={ (query) => setSearchTerm(query.target.value) } 
+      />
 
-        <Button 
-        variant="outline-success">
-          Search
-        </Button>
-      </Form>
-      
-    </div>
+      <Button 
+      variant="outline-success">
+        Search
+      </Button>
+    </Form>
   );
   
 }
