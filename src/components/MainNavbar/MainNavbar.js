@@ -16,7 +16,8 @@ class MainNavbar extends React.Component {
 
         <Navbar.Collapse id="responsive-navbar-nav">
         
-          <SearchBar data={this.props.data}/>
+          <SearchBar 
+          data={this.props.data}/>
         
           <Nav className="ml-auto">
             <Nav.Link href="#home">

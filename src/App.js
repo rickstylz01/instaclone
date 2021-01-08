@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div>
-      <MainNavbar data={data} />
+      <MainNavbar 
+      data={data} />
       <Container>
-        
       <PostIndex data={data}/>
       </Container> 
     </div>
