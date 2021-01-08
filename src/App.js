@@ -1,20 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import MainNavbar from './components/MainNavbar/MainNavbar';
-import PostIndex from './components/PostIndex/PostIndex';
-import postsData from './components/PostIndex/postsData.json';
+import Main from './components/Main/Main';
 
 function App() {
-  const data = postsData;
-
   return (
-    <div>
-      <MainNavbar 
-      data={data} />
-      <Container>
-      <PostIndex data={data}/>
-      </Container> 
-    </div>
+    <Main />
   );
 }
 
