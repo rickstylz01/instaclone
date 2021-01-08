@@ -81,7 +81,8 @@ class Main extends React.Component {
         </Navbar>
         <Container>
           <div><p>Hello!</p></div>
-          <PostIndex data={this.dynamicSearch()}/>
+          <PostIndex
+            data={this.dynamicSearch()}/>
         </Container>
       </div>
     )
