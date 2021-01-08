@@ -1,16 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import MainNavbar from './components/MainNavbar/MainNavbar';
-import PostIndex from './components/PostIndex/PostIndex';
+import Main from './components/Main/Main';
 
 function App() {
   return (
-    <div>
-      <MainNavbar />
-      <Container>
-        <PostIndex />
-      </Container> 
-    </div>
+    <Main />
   );
 }
 
