@@ -80,7 +80,6 @@ class Main extends React.Component {
           </Navbar.Collapse>
         </Navbar>
         <Container>
-          <div><p>Hello!</p></div>
           <PostIndex
             data={this.dynamicSearch()}/>
         </Container>
